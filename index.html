@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>M. Hassaan Saleem – Al-Amin Enterprises</title>
 <style>
-:root{--bg:#fff;--fg:#1a1a1a;--muted:#666;--card:#f6f4f3;--line:#e2dcd9;--red:#f0401f;--deep:#b3201a;--sw:.16;color-scheme:light;
+:root{--bg:#fff;--fg:#1a1a1a;--muted:#666;--card:#f6f4f3;--line:#e2dcd9;--red:#c02025;--deep:#8f171b;--sw:.16;color-scheme:light;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 :root[data-theme="dark"]{color-scheme:dark;--bg:#0b0b0b;--fg:#f4f4f4;--muted:#aaa;--card:#1c1c1c;--line:#3a3a3a;--sw:.35}
 *{box-sizing:border-box;margin:0}
@@ -18,7 +18,7 @@ main{position:relative;height:100%;display:flex;flex-direction:column;align-item
 .logo{text-align:center;line-height:0}
 .logo img{height:clamp(96px,18dvh,150px);width:auto;max-width:60vw;object-fit:contain}
 .who{text-align:center}
-.av{width:clamp(52px,9dvh,72px);aspect-ratio:1;border-radius:16px;border:2px solid var(--red);display:grid;place-items:center;margin:0 auto 8px;font:700 clamp(18px,3vh,24px) Georgia,serif;color:var(--red);background:var(--card)}
+.av{--s:clamp(56px,9.5dvh,76px);width:var(--s);aspect-ratio:1;line-height:1;white-space:nowrap;letter-spacing:.5px;overflow:hidden;border-radius:16px;border:2px solid var(--red);display:grid;place-items:center;margin:0 auto 8px;font:700 calc(var(--s)*.29) Georgia,serif;color:var(--red);background:var(--card)}
 .who h1{font:700 clamp(19px,3.2dvh,24px) "Playfair Display",Georgia,serif}
 .who p{color:var(--muted);font-size:14px;margin:2px 0 6px}
 .who a{display:block;color:var(--red);text-decoration:none;font-size:14px;font-weight:600;padding:2px}
@@ -47,7 +47,9 @@ svg.i{width:26px;height:26px;fill:none;stroke:var(--red);stroke-width:1.7;stroke
 <div class="swoosh" aria-hidden="true"><svg viewBox="0 0 400 800" preserveAspectRatio="none"><path d="M400 0C330 90 300 190 330 300C355 390 400 430 400 430V0Z" fill="#f0401f"/><path d="M0 800C70 730 110 660 90 590C75 540 30 520 0 520V800Z" fill="#b3201a"/></svg></div>
 <button class="tg" id="tg" aria-label="Toggle light or dark theme">◐</button>
 <main>
-  <div class="logo"><img src="logo.png" alt="Al-Amin Enterprises Logo"></div>
+  <div class="logo">
+    <img src="logo.png" alt="Al-Amin Enterprises Logo">
+  </div>
   <div class="who">
     <div class="av">MHS</div>
     <h1>M. Hassaan Saleem</h1>
